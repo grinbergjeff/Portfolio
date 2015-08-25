@@ -5,20 +5,25 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Arvo', serif;
+	-webkit-font-smoothing: antialiased;
 }
 #intro {
 	background-image: url(../images/background-intro.jpg);
 	background-size: cover;
 	height: 100%;
-	margin-top: -20px;
+	overflow: hidden;
 }
 #intro-haze {
-	background-color: #404040;
-	opacity: .65;
+	background: rgba(39,62,84,0.52);
 	height: 100%;
+	overflow: hidden;
 }
 #name {
+	font-size: 65px;
 	text-align: center;
 	color: white;
-	padding-top: 40px;
+	padding-top: 20%;
+}
+#down {
+	color: white;
 }
