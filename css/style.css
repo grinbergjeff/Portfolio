@@ -7,27 +7,9 @@ html, body {
 	font-family: 'Arvo', serif;
 	-webkit-font-smoothing: antialiased;
 }
+/*Aways There*/
 #container {
 	height: 100%;
-}
-#intro-section, #about-me {
-	background-image: url(../images/background-intro.jpg);
-	background-size: cover;
-	height: 100%;
-	overflow: hidden;
-}
-#haze {
-	background: rgba(39,62,84,0.52);
-	height: 100%;
-	overflow: hidden;
-}
-#intro-content {
-	text-align: center;	
-}
-#name {
-	font-size: 65px;
-	color: white;
-	padding-top: 20%;
 }
 #right, #iama, #left {
 	color: white;
@@ -50,6 +32,7 @@ html, body {
 	position: fixed;
 	z-index: 10;
 }
+/*Menu*/
 #menu {
 	width: 100%;
 	z-index: 4;
@@ -76,7 +59,7 @@ li {
 	display: inline-block;
 }
 #menu-am:hover, #menu-p:hover, #menu-c:hover{
-	background: rgba(56,62,50,1);
+	background: rgba(95, 158, 160,.3);
 	cursor: pointer;
 	animation-name: change-height;
 	animation-duration: 2s;
@@ -85,6 +68,27 @@ li {
 @keyframes change-height {
 	50% {height: 125%};
 }
+/*Intro Section*/
+#intro-section, #about-me {
+	background-image: url(../images/background-intro.jpg);
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+}
+#haze {
+	background: rgba(39,62,84,0.52);
+	height: 100%;
+	overflow: hidden;
+}
+#intro-content {
+	text-align: center;	
+}
+#name {
+	font-size: 65px;
+	color: white;
+	padding-top: 20%;
+}
+/*About Me Section*/
 #about-content {
 	text-align: center;	
 }
