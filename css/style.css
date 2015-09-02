@@ -7,6 +7,9 @@ html, body {
 	font-family: 'Arvo', serif;
 	-webkit-font-smoothing: antialiased;
 }
+#container {
+	height: 100%;
+}
 #intro-section {
 	background-image: url(../images/background-intro.jpg);
 	background-size: cover;
@@ -26,49 +29,64 @@ html, body {
 	color: white;
 	padding-top: 20%;
 }
-#down, #iama {
+#right, #iama {
 	color: white;
 }
-#down {
-	padding-top: -10%;	
+#right-cont {
+	margin-top: 25%;
+	padding-right: 10%;
+	right: 0;
+	position: fixed;
+	z-index: 10;
+}
+#right:hover {
+	cursor: pointer;
 }
 #about-me {
 	height: 100%;
 	background-image: url(../images/);
-	background-color: black;
+	background: rgba(39,62,84,0.6);;
 	overflow: hidden;
 }
 #menu {
+	width: 100%;
 	z-index: 4;
 	position: fixed;
-	height: 18%;
-	width: 15%;
 	margin-left: 10px;
-	margin-top: 20%;
+	margin-top: 40%;
+	text-align: center;
 }
 #menu-buttons {
 	color: white;
 	list-style: none;
-	margin-top: 100px;
+	margin-top: 80px;
+	margin-left: -66px;
+	display: inline-block;
+	text-align: center;
 }
 .active {
-	background-color: crimson;	
+	background: rgba(39,60,82,1);	
 }
 li {
-	text-align: center;
 	font-size: 16px;
-	width: 100%;
-	margin-left: -20px;
-	padding: 10px 0px 10px 0;
-	background: rgba(39,62,84,0.2);
+	padding: 10px 20px 10px 20px;
+	background: rgba(39,62,84,0.0001);
+	display: inline-block;
 }
 #menu-am:hover, #menu-p:hover, #menu-c:hover{
-	background-color: tomato;
+	background: rgba(56,62,50,1);
 	cursor: pointer;
-	animation-name: change-width;
+	animation-name: change-height;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 }
-@keyframes change-width {
-	50% {width: 125%};
+@keyframes change-height {
+	50% {height: 125%};
+}
+#about-content {
+	text-align: center;	
+}
+#about-title {
+	color: white;
+	font-size: 65px;
 }
