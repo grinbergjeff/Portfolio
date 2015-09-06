@@ -23,7 +23,7 @@ html, body {
 }
 #right:hover, #left:hover {
 	cursor: pointer;
-	color: cadetblue;
+	color: rgba(60, 90, 74,.6);
 }
 #left-cont {
 	margin-top: 25%;
@@ -36,6 +36,7 @@ html, body {
 #menu {
 	width: 100%;
 	z-index: 4;
+	bottom: 0;
 	position: fixed;
 	margin-left: 10px;
 	margin-top: 40%;
@@ -50,7 +51,7 @@ html, body {
 	text-align: center;
 }
 .active {
-	background: rgba(39,60,82,1);	
+	background: rgba(39,60,82,.4);	
 }
 li {
 	font-size: 16px;
@@ -59,7 +60,7 @@ li {
 	display: inline-block;
 }
 #menu-am:hover, #menu-p:hover, #menu-c:hover{
-	background: rgba(95, 158, 160,.3);
+	background: rgba(39, 60, 74,.2);
 	cursor: pointer;
 	animation-name: change-height;
 	animation-duration: 2s;
@@ -70,13 +71,14 @@ li {
 }
 /*Intro Section*/
 #intro-section, #about-me {
-	background-image: url(../images/background-intro.jpg);
-	background-size: cover;
+	background-image: url(../images/alternate-background.png);
+	background-size:auto;
+	background-color: black;
 	height: 100%;
 	overflow: hidden;
 }
 #haze {
-	background: rgba(39,62,84,0.52);
+	background: rgba(39,62,84,0.36);
 	height: 100%;
 	overflow: hidden;
 }
@@ -90,9 +92,17 @@ li {
 }
 /*About Me Section*/
 #about-content {
-	text-align: center;	
+
 }
 #about-title {
+	text-align: center;	
 	color: white;
 	font-size: 65px;
+}
+#para-container {
+	color: white;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 120px;
+	padding: 2px;
 }
