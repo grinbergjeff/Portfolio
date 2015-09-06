@@ -70,14 +70,14 @@ li {
 	50% {height: 125%};
 }
 /*Intro Section*/
-#intro-section, #about-me {
+#intro-section, #about-me, #portfolio, #contact {
 	background-image: url(../images/alternate-background.png);
 	background-size:auto;
 	background-color: black;
 	height: 100%;
 	overflow: hidden;
 }
-#haze {
+.haze {
 	background: rgba(39,62,84,0.36);
 	height: 100%;
 	overflow: hidden;
@@ -91,9 +91,6 @@ li {
 	padding-top: 20%;
 }
 /*About Me Section*/
-#about-content {
-
-}
 #about-title {
 	text-align: center;	
 	color: white;
@@ -106,3 +103,9 @@ li {
 	margin-top: 120px;
 	padding: 2px;
 }
+.test {
+	color: white;
+}
+/*Portfolio Section*/
+
+/*Contact Section*/

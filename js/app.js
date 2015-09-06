@@ -1,10 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
-	
-	//Hide landing page for now to implement design for other areas
-	/*document.getElementById('intro-section').style.display='none';*/
-	
-	clickMenuActive();
 	displayActive();
+	clickMenuActive();
+	
 });
 
 /*Functions*/
@@ -26,6 +23,7 @@ function clickMenuActive(clickedButton) {
 		//Make clicked element active
 		var target = getEventTarget(event);
 		target.setAttribute('class','active');
+		displayActive();
 	}
 }
 function displayActive() {
@@ -33,14 +31,25 @@ function displayActive() {
 	for (var i = 0; i < activeElement.length; i++) {
 		var activeElementID = activeElement[i].getAttribute('id');
 		//If active element's ID is ___, go to respective section
+		console.log('active element is: ' + activeElementID);
 		if (activeElementID === 'menu-am') {
-			document.getElementById('portfolio', 'contact').style.display='none';
+			document.getElementById('about-me').style.display='inherit';
+			document.getElementById('portfolio').style.display='none';
+			document.getElementById('contact').style.display='none';
+			document.getElementById('intro-section').style.display='none'; // This is temporary
 		}
 		else if (activeElementID === 'menu-p') {
-			document.getElementById('about-me', 'contact').style.display='none';
+			document.getElementById('portfolio').style.display='inherit';
+			document.getElementById('about-me').style.display='none';
+			document.getElementById('contact').style.display='none';
+			document.getElementById('intro-section').style.display='none'; // This is temporary
+			
 		}
 		else if (activeElementID === 'menu-c') {
-			document.getElementById('about-me', 'portfolio').style.display='none';
+			document.getElementById('contact').style.display='inherit';
+			document.getElementById('portfolio').style.display='none';
+			document.getElementById('about-me').style.display='none';
+			document.getElementById('intro-section').style.display='none'; // This is temporary
 		}
 	}
 }
