@@ -13,24 +13,44 @@ html, body {
 }
 #right, #iama, #left {
 	color: white;
-}
-#right-cont {
-	margin-top: 25%;
-	padding-right: 10%;
-	right: 0;
-	position: fixed;
-	z-index: 10;
-}
-#right:hover, #left:hover {
 	cursor: pointer;
-	color: rgba(60, 90, 74,.6);
+}
+.arrow-cont {
+	top: 40%;
+	right: 0;
+	bottom: 70px;
+	position: absolute;
 }
 #left-cont {
-	margin-top: 25%;
-	padding-left: 10%;
-	left: 0;
-	position: fixed;
-	z-index: 10;
+	left: 15px;
+}
+#right-cont {
+	right: 15px;
+	z-index: 300;
+}
+.title {
+	text-align: center;	
+	color: white;
+	font-size: 65px;
+}
+/*Animation Section*/
+#right:hover, #left:hover, .fa.fa-envelope-o.fa-3x:hover, .fa.fa-twitter.fa-3x:hover, .fa.fa-linkedin.fa-3x:hover, .fa.fa-github.fa-3x:hover {
+	cursor: pointer;
+	z-index: 1000;
+	-webkit-animation-name: pulse;
+    animation-name: pulse;
+	animation-duration: .7s;
+	animation-timing-function: ease-out;
+}
+@-webkit-keyframes pulse {
+	 0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }	
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 /*Menu*/
 #menu {
@@ -91,21 +111,35 @@ li {
 	padding-top: 20%;
 }
 /*About Me Section*/
-#about-title {
-	text-align: center;	
-	color: white;
-	font-size: 65px;
-}
 #para-container {
 	color: white;
 	width: 50%;
+	height: 50%;
 	margin: 0 auto;
 	margin-top: 120px;
 	padding: 2px;
 }
-.test {
-	color: white;
+.am-p {
+	font-size: 120%;	
 }
 /*Portfolio Section*/
 
 /*Contact Section*/
+a {
+	color: white;
+	text-decoration: none;
+}
+.contact-images {
+	list-style: none;
+	text-align: center;
+}
+#contact-div {
+	margin: 0 auto;
+	width: 50%;
+	margin-top: 15%;
+	text-align: center;
+	z-index: 200;
+}
+.contact-images p {
+	font-size: 120%;
+}

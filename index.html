@@ -18,16 +18,16 @@
 </head>
 <body>
 	<div id="container">
-		<div id="right-cont">
+		<div class="arrow-cont" id="right-cont">
 			<i class="fa fa-angle-double-right fa-5x" id="right"></i>
 		</div>
-		<div id="left-cont">
+		<div class="arrow-cont" div id="left-cont">
 			<i class="fa fa-angle-double-left fa-5x" id="left"></i>			</div>
 		<div id="menu">
 				<ul id="menu-buttons">
-					<li id="menu-am" class="active">About Me</li>
-					<li id="menu-p">Portfolio</li>
-					<li id="menu-c">Contact</li>
+					<li id="menu-am" class="active" class="menu-list">About Me</li>
+					<li id="menu-p" class="menu-list">Portfolio</li>
+					<li id="menu-c" class="menu-list">Contact</li>
 				</ul>
 			</div>
 		<section id="intro-section">
@@ -41,7 +41,7 @@
 		<section id="about-me">
 			<div class="haze">
 				<div id="about-content">
-					<h2 id="about-title">About Me</h2>
+					<h2 class="title">About Me</h2>
 					<div id="para-container">
 						<p class="am-p">I am a Computer Engineering senior at Binghamton University with a love for web development. I have always been fascinated with the power of computers and the interwebs.</p>
 						<p class="am-p">I am based in New York, NY and make everything with &#9829;.</p>
@@ -51,12 +51,32 @@
 		</section>		
 		<section id="portfolio">
 			<div class="haze">
+				<h2 class="title">Portfolio</h2>
 				<p class="test">yoyoyoyoyoyoyoyo</p>
 			</div>
 		</section>
 		<section id="contact">
 			<div class="haze">
-				<p class="test">aaaaaaaaaaaaa</p>
+				<h2 class="title">Contact</h2>
+				<div id="contact-div">
+					<ul class ="contact-images">
+						<a href="mailto:grinbergjeff@gmail.com"><li class="email">
+							<i class="fa fa-envelope-o fa-3x"></i></li>
+						</a>
+					<a href="//twitter.com/jeff3dup"><li class ="twitter">
+						<i class="fa fa-twitter fa-3x"></i>
+						</li>
+					</a>
+					<a href="//linkedin.com/in/grinbergjeff"><li class="linkedin">
+						<i class="fa fa-linkedin fa-3x"></i>
+						</li>
+					</a>
+					<a href="//github.com/grinbergjeff"><li class="github">
+						<i class="fa fa-github fa-3x"></i>
+						</li>
+					</a>	
+				</ul>
+			</div>
 			</div>
 		</section>
 	</div>
