@@ -1,10 +1,17 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
+	introduction();
 	displayActive();
 	clickMenuActive();
 	
 });
 
 /*Functions*/
+function introduction() {
+	var doNotDisplay = ['contact','portfolio','about-me','menu','left-cont']
+	for (var i=0; i < doNotDisplay.length; i++) {
+		document.getElementById(doNotDisplay[i]).style.display='none';
+	}
+}
 
 function clickMenuActive(clickedButton) {
 	//Function to grab information of event/element
