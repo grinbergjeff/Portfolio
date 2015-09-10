@@ -4,7 +4,7 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'Arvo', serif;
+	font-family: 'Varela Round', sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 /*Aways There*/
@@ -12,7 +12,7 @@ html, body {
 	height: 100%;
 }
 #right, #iama, #left {
-	color: white;
+	color: black;
 	cursor: pointer;
 }
 .arrow-cont {
@@ -30,8 +30,27 @@ html, body {
 }
 .title {
 	text-align: center;	
-	color: white;
+	color: black;
 	font-size: 65px;
+}
+/*Logo Section*/
+#logo-div {
+	background-color: black;
+	width: 125px;
+	height: 125px;
+	text-align: center;
+	margin: 0 auto;
+}
+#g {
+	font-size: 70px;
+	color: white;
+	padding-top: 15px;
+}
+#dot {
+	margin-top: -182px;
+	padding-left: 28px;
+	font-size: 60px;
+	color: white;
 }
 /*Animation Section*/
 #right:hover, #left:hover, .fa.fa-envelope-o.fa-3x:hover, .fa.fa-twitter.fa-3x:hover, .fa.fa-linkedin.fa-3x:hover, .fa.fa-github.fa-3x:hover {
@@ -63,7 +82,7 @@ html, body {
 	text-align: center;
 }
 #menu-buttons {
-	color: white;
+	color: black;
 	list-style: none;
 	margin-top: 80px;
 	margin-left: -66px;
@@ -91,14 +110,6 @@ li {
 }
 /*Intro Section*/
 #intro-section, #about-me, #portfolio, #contact {
-	background-image: url(../images/alternate-background.png);
-	background-size:auto;
-	background-color: black;
-	height: 100%;
-	overflow: hidden;
-}
-.haze {
-	background: rgba(39,62,84,0.36);
 	height: 100%;
 	overflow: hidden;
 }
@@ -106,8 +117,7 @@ li {
 	text-align: center;	
 }
 #name {
-	font-size: 65px;
-	color: white;
+	color: black;
 	padding-top: 20%;
 }
 /*About Me Section*/
@@ -126,8 +136,11 @@ li {
 
 /*Contact Section*/
 a {
-	color: white;
+	color: black;
 	text-decoration: none;
+}
+a:visited {
+	color: black;	
 }
 .contact-images {
 	list-style: none;

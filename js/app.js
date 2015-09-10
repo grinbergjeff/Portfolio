@@ -12,6 +12,16 @@ function introduction() {
 		document.getElementById(doNotDisplay[i]).style.display='none';
 	}
 }
+function nextSection() {
+	var activeElement = document.getElementsByClassName('active');
+	var elementID = activeElement.getAttribute('id');
+	var checkIDs = ['contact','portfolio','about-me','menu','left-cont']
+	for (var i=0; i < checkIDs.length; i++) {
+		if (elementID === checkIDs[i]) {
+			activeElement[i].setAttribute('class', '');
+			
+	}
+}
 
 function clickMenuActive(clickedButton) {
 	//Function to grab information of event/element
